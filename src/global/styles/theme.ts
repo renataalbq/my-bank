@@ -7,6 +7,7 @@ export const theme = {
       button: '#484AA8',
       forms: '#9B9B9B',
       line: '#7380CE',
+      overlay: 'rgba(0,0,0,0.7)'
     },
   
     fonts: {

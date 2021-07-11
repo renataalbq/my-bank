@@ -7,12 +7,12 @@ export const styles = StyleSheet.create({
       width: '100%',
       paddingHorizontal: 24,
       marginTop: 15,
-      marginBottom: 15,
+      marginBottom: 30,
     },
     title: {
-        fontFamily: theme.fonts.Mtitle700,
+        fontFamily: theme.fonts.Ititle700,
         color: '#FFF',
-        fontSize: 22
+        fontSize: 24
     },
 
 });

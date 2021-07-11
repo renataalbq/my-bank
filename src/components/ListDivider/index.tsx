@@ -16,7 +16,7 @@ export function ListDivider({ isCentered }: Props){
           marginVertical: 12,
         } : {
           marginTop: 2,
-          marginBottom: 31,
+          marginBottom: 20,
         }
       ]}
     />

@@ -4,17 +4,12 @@ import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
-// type Props = RectButtonProps & {
-//   title: string;
-//   children: ReactNode
-// }
-
-type Props = {
+type Props = RectButtonProps & {
   title: string;
   children: ReactNode
 }
 
-export function Buttons({children, title, ...rest } : Props){
+export function ButtonAction({children, title, ...rest } : Props){
   return(
     <RectButton 
       style={styles.container} 
