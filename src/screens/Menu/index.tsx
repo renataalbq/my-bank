@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text} from 'react-native';
+import { View, Text, Image} from 'react-native';
 import { ListDivider } from '../../components/ListDivider';
-import { Background } from '../../components/Background';
+import { Avatar } from '../../components/Avatar';
 import { ListHeader } from '../../components/ListHeader';
 import { RectButton} from 'react-native-gesture-handler';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -16,15 +16,23 @@ export function Menu() {
     function handlePerfil(){
         navigation.navigate('Perfil')
     }
+    function handleCloseMenu(){
+        navigation.navigate('Home')
+    }
 
     return(
-        <Background>
+        <View style={styles.bgMenu}>
             <View style={styles.header}>
-                <ListHeader title='Olá, Renata' />
+                <View style={styles.avatar}>
+                    <Avatar urlImg="https://github.com/renataalbq.png" />
+                </View>
+                <ListHeader title='Olá, Renata' /> 
                 <MaterialIcons 
                     name="highlight-off" 
                     color="#FFFF" 
                     size={46}
+                    onPress={handleCloseMenu}
+                    style={styles.closeIcon}
                 />
             </View>
             <View style={styles.container}>
@@ -93,6 +101,6 @@ export function Menu() {
                 </RectButton>    
             </View>
 
-        </Background>
+        </View>
     );
 }

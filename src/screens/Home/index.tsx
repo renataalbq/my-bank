@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import { View, Text, FlatList, ScrollView } from 'react-native';
-import { RectButton} from 'react-native-gesture-handler';
 import { ListDivider } from '../../components/ListDivider';
 import { ListHeader } from '../../components/ListHeader';
 import { Background } from '../../components/Background';
 import { ButtonAction } from '../../components/ButtonAction';
-import { Lista } from '../../components/List';
+import { Transactions } from '../../components/Transactions';
 import { MaterialIcons } from '@expo/vector-icons';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
@@ -63,6 +62,14 @@ export function Home() {
     navigation.navigate('Menu');
   }
 
+  function handleTransferir(){
+    navigation.navigate('Transferir');
+  }
+
+  function handlePix(){
+    navigation.navigate('Pix');
+  }
+
   return (
     <Background>
       <ScrollView>
@@ -100,29 +107,21 @@ export function Home() {
         <View style={styles.container}>
           <View style={styles.box}> 
             <ButtonAction title={'PAGAR'}>
-              <View style={styles.icon}>
-                <MaterialIcons name="monetization-on" color="#FFFF" size={48}/>
-              </View>
+              <MaterialIcons name="monetization-on" color="#FFFF" size={48} style={styles.icon}/>
             </ButtonAction>
 
-            <ButtonAction title={'TRANSFERIR'}>
-              <View style={styles.icon}>
-                <MaterialIcons name="swap-horiz" color="#FFFF" size={48}/>
-              </View>
+            <ButtonAction title={'TRANSFERIR'} onPress={handleTransferir}>
+              <MaterialIcons name="swap-horiz" color="#FFFF" size={48} style={styles.icon}/>
             </ButtonAction>
           </View>   
 
           <View style={styles.box}>
             <ButtonAction title={'DEPOSITAR'}>
-              <View style={styles.icon}>
-                <MaterialIcons name="payment" color="#FFFF" size={48}/>
-              </View>
+              <MaterialIcons name="payment" color="#FFFF" size={48} style={styles.icon}/>
             </ButtonAction>
 
-            <ButtonAction title={'PIX'}>
-              <View style={styles.icon}>
-                <MaterialIcons name="add-circle" color="#FFFF" size={48}/>
-              </View>
+            <ButtonAction title={'PIX'} onPress={handlePix}>
+              <MaterialIcons name="add-circle" color="#FFFF" size={48} style={styles.icon}/>
             </ButtonAction>
           </View>  
         </View>
@@ -133,7 +132,7 @@ export function Home() {
             data={dados} 
             keyExtractor={item => item.id} 
             renderItem={({item}) => (
-              <Lista data={item} />
+              <Transactions data={item} />
             )} 
             ItemSeparatorComponent={() => <ListDivider />}
           />

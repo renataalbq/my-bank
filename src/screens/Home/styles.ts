@@ -4,31 +4,36 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
     header:{
         flexDirection: 'row',
-        marginTop:40,
+        marginTop:42,
         marginBottom: 35,
         justifyContent: 'center',
     },
     content: {
-        paddingHorizontal: 75,
+        paddingHorizontal: 55,
     },
     container: {
         width:'100%',
+        marginHorizontal: 5
     },
     box: {
         flexDirection: 'row',
+        paddingHorizontal: 10,
+        justifyContent: 'center',
+
     },
     icon:{
-        alignItems: 'center',
+        alignSelf: 'center',
         paddingVertical: 15
     },
     titleHeader:{
         color: '#FFFF',
         fontSize: 36,
         fontFamily: theme.fonts.Mtitle700,
+        paddingLeft: 45
     },
     saldo:{
         paddingTop: 20,
-        paddingLeft: 35
+        paddingLeft: 45
 
     },
     subtitle:{
@@ -48,7 +53,7 @@ export const styles = StyleSheet.create({
 
     },
     viewIcon:{
-        paddingRight: 35,
+        paddingRight: 45,
         paddingTop: 6
     }
 });

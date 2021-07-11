@@ -4,6 +4,8 @@ import { Home } from '../screens/Home';
 import { Menu } from '../screens/Menu';
 import { Perfil } from '../screens/Perfil';
 import { AddCard } from '../screens/AddCard';
+import { Transferir } from '../screens/Transferir';
+import { Pix } from '../screens/Pix';
 
 const {Navigator, Screen} = createStackNavigator();
 
@@ -30,6 +32,14 @@ export function AppRoutes(){
             <Screen 
                 name="AddCard"
                 component={AddCard}
+            />
+            <Screen 
+                name="Transferir"
+                component={Transferir}
+            />
+            <Screen 
+                name="Pix"
+                component={Pix}
             />
 
         </Navigator>

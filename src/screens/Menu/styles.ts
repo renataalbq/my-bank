@@ -2,11 +2,22 @@ import { StyleSheet } from 'react-native';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
+    bgMenu:{
+        flex: 1,
+        backgroundColor: theme.colors.linear2
+    },
     header:{
         flexDirection: 'row',
-        paddingHorizontal: 40,
+        paddingHorizontal: 67,
         justifyContent: 'center',
         paddingTop: 38
+    },
+    avatar:{
+        paddingTop: 10,
+    },
+
+    closeIcon:{
+        paddingTop: 5,
     },
     container: {
         flex: 1,

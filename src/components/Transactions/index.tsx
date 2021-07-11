@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { styles } from './styles';
 
-export type ListaProps ={
+export type TransactionsProps ={
     id: string;
     title: string;
     value: string;
@@ -11,10 +11,10 @@ export type ListaProps ={
 }
 
 type Props = {
-    data: ListaProps
+    data: TransactionsProps
 }
 
-export function Lista({data}: Props) {
+export function Transactions({data}: Props) {
     return (
         <View style={styles.container}>
             <View style={styles.item}>
