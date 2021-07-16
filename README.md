@@ -23,6 +23,7 @@ expo start
 - [Expo](https://docs.expo.io/)
 - [Typescript](https://www.typescriptlang.org/)
 
+## Vídeo desenvolvendo a aplicação neste [link](https://www.linkedin.com/posts/renataalbq_reactnative-activity-6821789575204126720-Wfn6)
 
 <div align="center">
   <p>Desenvolvido por Renata Albuquerque 🐭 </p>
