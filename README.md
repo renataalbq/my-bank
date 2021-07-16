@@ -19,9 +19,9 @@ expo start
 ```
 
 ## Tecnologias utilizadas
-- [React Native] (https://reactnative.dev/docs/getting-started)
-- [Expo] (https://docs.expo.io/)
-- [Typescript] (https://www.typescriptlang.org/)
+- [React Native](https://reactnative.dev/docs/getting-started)
+- [Expo](https://docs.expo.io/)
+- [Typescript](https://www.typescriptlang.org/)
 
 
 <div align="center">
