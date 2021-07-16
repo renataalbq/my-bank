@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text,Image } from "react-native";
+import { View, Text, Image } from "react-native";
 import { Background } from '../../components/Background';
 import { ListDivider } from '../../components/ListDivider';
 import { ButtonAction } from '../../components/ButtonAction';
@@ -7,7 +7,7 @@ import {Lista} from '../../components/Lista';
 import { Header } from "../../components/Header";
 import {styles} from './styles';
 import { MaterialIcons } from '@expo/vector-icons';
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import { FlatList } from "react-native-gesture-handler";
 import pixLogo from '../../assets/pixLogo.png';
 
 
@@ -23,12 +23,13 @@ export function Pix(){
         },
 
     ]
+
     return(
         <Background>
             <Header title="PIX" />
             <View style={styles.content}>
                 <Image source={pixLogo} style={styles.image} resizeMode="stretch" />
-                <Text style={styles.text}>
+                <Text style={styles.title}>
                     Envie e receba pagamentos{`\n`}
                     de forma instantânea e gratuita
                 </Text>
@@ -45,9 +46,9 @@ export function Pix(){
                     </ButtonAction>  
                 </View>
                 <View style={styles.box}>
-                    <ButtonAction title={'RECEBER'}>
+                    <ButtonAction title={'TRANSFERIR'}>
                         <MaterialIcons 
-                            name="arrow-downward" 
+                            name="swap-horiz" 
                             color="#FFFF" 
                             size={48}  
                             style={styles.icon}
@@ -71,6 +72,8 @@ export function Pix(){
                     
                 />
             </View>
+        
+            
         </Background>
     );
 }

@@ -1,0 +1,5 @@
+const DATABASE_NAME = "@mybank";
+
+const COLLECTION_CARDS = `${DATABASE_NAME}:cards`
+
+export { COLLECTION_CARDS, DATABASE_NAME}

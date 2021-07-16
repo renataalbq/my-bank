@@ -4,6 +4,7 @@ import { Home } from '../screens/Home';
 import { Menu } from '../screens/Menu';
 import { Perfil } from '../screens/Perfil';
 import { AddCard } from '../screens/AddCard';
+import { Cards } from '../screens/Cards';
 import { Transferir } from '../screens/Transferir';
 import { Pix } from '../screens/Pix';
 
@@ -28,6 +29,10 @@ export function AppRoutes(){
             <Screen 
                 name="Perfil"
                 component={Perfil}
+            />
+            <Screen 
+                name="Cards"
+                component={Cards}
             />
             <Screen 
                 name="AddCard"

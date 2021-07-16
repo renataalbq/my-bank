@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         textAlign: 'center',
         fontFamily: theme.fonts.Ititle700, 
-        fontSize: 20,
+        fontSize: 22,
         color: '#FFF'
 
     }

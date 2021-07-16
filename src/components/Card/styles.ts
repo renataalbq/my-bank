@@ -31,5 +31,6 @@ export const styles = StyleSheet.create({
       fontSize: 13,
       fontFamily: theme.fonts.Itext400,
       paddingBottom: 10,
-  }
+  },
+
 });

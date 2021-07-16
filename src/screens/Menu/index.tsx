@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image} from 'react-native';
+import { View, Text} from 'react-native';
 import { ListDivider } from '../../components/ListDivider';
 import { Avatar } from '../../components/Avatar';
 import { ListHeader } from '../../components/ListHeader';
@@ -18,6 +18,10 @@ export function Menu() {
     }
     function handleCloseMenu(){
         navigation.navigate('Home')
+    }
+
+    function handleCards(){
+        navigation.navigate('Cards')
     }
 
     return(
@@ -47,7 +51,7 @@ export function Menu() {
                 </TouchableOpacity>
                 <ListDivider />
 
-                <TouchableOpacity style={styles.navItem}>
+                <TouchableOpacity style={styles.navItem} onPress={handleCards}>
                     <Text style={styles.text}>Cadastrar Cartão</Text>
                     <MaterialIcons 
                     name="keyboard-arrow-right" 

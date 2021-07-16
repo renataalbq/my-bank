@@ -6,17 +6,21 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         paddingVertical: 25
     },
-    title:{
-        fontFamily: theme.fonts.Itext600,
-        fontSize: 24,
-        color: '#FFF',
-        textAlign: 'center',
-        paddingVertical: 22
-    },
+
     image:{
         width: 100,
         height: 100,
         
+    },
+    title:{
+        width: '100%',
+        fontFamily: theme.fonts.Mtitle700,
+        fontSize: 24,
+        color: '#FFF',
+        textAlign: 'center',
+        lineHeight: 35,
+        marginBottom: 16,
+        paddingTop: 10
     },
     container:{
         width: '100%',
@@ -34,16 +38,6 @@ export const styles = StyleSheet.create({
     content:{
         alignItems: 'center'
     },
-    text:{
-        width: '100%',
-        fontFamily: theme.fonts.Mtitle700,
-        fontSize: 24,
-        color: '#FFF',
-        textAlign: 'center',
-        lineHeight: 35,
-        marginBottom: 16,
-        paddingTop: 10
-    },
     infos:{
         paddingTop: 24
     },
@@ -54,6 +48,45 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         alignContent: 'center'
+    },
+    button:{
+        paddingBottom: 15,
+    },
+    text:{
+        width: '100%',
+        fontFamily: theme.fonts.Ititle700,
+        fontSize: 22,
+        color: '#FFF',
+        textAlign: 'center',
+        marginBottom: 15,
+    },
+    textModal:{
+        width: '100%',
+        fontFamily: theme.fonts.Ititle700,
+        fontSize: 22,
+        color: '#FFF',
+        textAlign: 'center',
+        marginTop: 50,
+    },
+    overlay:{
+        flex: 1,
+        backgroundColor: theme.colors.overlay
+    },
+    modal:{
+        flex: 1,
+        marginTop: 100
+    },
+    bar:{
+        width: 39,
+        height: 2,
+        borderRadius: 2,
+        backgroundColor: '#E6E6E6',
+        alignSelf: 'center',
+        marginTop: 13,
+    },
+    closeIcon:{
+        position: 'absolute',
+        right: 15,
     },
 
 })

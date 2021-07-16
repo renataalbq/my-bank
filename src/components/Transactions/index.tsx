@@ -21,9 +21,9 @@ export function Transactions({data}: Props) {
                 <Text style={styles.title}>{data.title}</Text>
                 <Text style={styles.value}>{data.value}</Text>
             </View>
-                <View style={styles.item}>
+            <View style={styles.item}>
                 <Text style={styles.desc}>{data.desc}</Text>
-            <Text style={styles.date}>{data.date}</Text>
+                <Text style={styles.date}>{data.date}</Text>
             </View>
         </View>
     );

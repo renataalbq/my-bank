@@ -24,10 +24,11 @@ export const styles = StyleSheet.create({
         borderBottomColor: theme.colors.line,
 
     },
+
     item:{
         flexDirection: 'row',
-        paddingHorizontal: 15,
         alignItems: 'center',
+        justifyContent: 'space-between'
 
     },
     text:{
@@ -35,6 +36,7 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.Itext600,
         fontSize: 20,
         color: '#FFF',
+        alignItems: 'center',
         
     },
     contatos:{
@@ -43,10 +45,31 @@ export const styles = StyleSheet.create({
     lista:{
         flexDirection: 'row',
         paddingBottom: 5,
-        paddingLeft: 24,
-        justifyContent: 'space-between',
+        paddingLeft: 15,
         alignItems: 'center',
-        alignContent: 'center'
+    
+       
     },
-
+    subtitle:{
+        fontFamily: theme.fonts.Itext300,
+        fontSize: 14,
+        color: '#FFF',
+        alignItems: 'center',
+    },
+    textName:{
+        fontFamily: theme.fonts.Itext600,
+        fontSize: 20,
+        color: '#FFF',
+    },
+    infos:{
+        paddingLeft: 10
+      
+    },
+    listaContainer:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingRight: 15
+    }
+    
 })
