@@ -1,4 +1,4 @@
-<h1 align="center">MyBank</h1> 
+![](./assets/MyBank.png)
 
 ## Executando o projeto
 
